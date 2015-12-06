@@ -59,7 +59,7 @@ namespace MVVM_3_ObservableCollection.ViewModels
 
         private void GenerateElementsToListView()
         {
-            var tempImages = new ObservableCollection<GalleryItem>
+            Images = new ObservableCollection<GalleryItem>
             {
                 new GalleryItem
                 {
@@ -83,7 +83,7 @@ namespace MVVM_3_ObservableCollection.ViewModels
                     Text = "Fotograf 3"
                 }
             };
-            Images = tempImages;
+            //Images = tempImages;
         }
 
         #endregion
@@ -94,8 +94,7 @@ namespace MVVM_3_ObservableCollection.ViewModels
         {
             SelectedItemName = item.Text;
         }
-
-
+        
         #endregion
 
     }

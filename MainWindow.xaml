@@ -35,7 +35,7 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Galeria" HorizontalAlignment="Center"/>
-        <ListView Grid.Row="1" VerticalAlignment="Center" ItemsSource="{Binding Images}"
+        <ListView Grid.Row="1" VerticalAlignment="Center" ItemsSource="{Binding Images, Mode=TwoWay}"
                   ItemTemplate="{StaticResource ListItem}" ItemsPanel="{StaticResource ListPanel}">
             
         </ListView>
